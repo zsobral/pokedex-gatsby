@@ -3,6 +3,8 @@ import Image from 'gatsby-image'
 import { css } from '@emotion/core'
 import pad from 'lodash/fp/padCharsStart'
 
+import PokemonType from './PokemonType'
+
 const styles = {
   card: theme => css`
     position: relative;
@@ -29,6 +31,12 @@ const styles = {
     font-size: 0.8rem;
   `,
   image: css``,
+  types: css`
+    margin-top: .8rem;
+    display: grid;
+    grid-gap: .4rem;
+    grid-auto-flow: column;
+  `
 }
 
 const PokemonCard = ({ pokemon, ...props }) => {
@@ -39,6 +47,11 @@ const PokemonCard = ({ pokemon, ...props }) => {
       </div>
       <span css={styles.title}>{pokemon.name}</span>
       <span css={styles.number}>{pad('0', 3, pokemon.number)}</span>
+      <div css={styles.types}>
+        {pokemon.type.map((type, index) => (
+          <PokemonType type={type} key={index} />
+        ))}
+      </div>
     </div>
   )
 }

@@ -7,6 +7,7 @@ const usePokedex = () => {
         nodes {
           number
           name
+          type
           image {
             childImageSharp {
               fixed(width: 125, height: 125) {
