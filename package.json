@@ -8,7 +8,6 @@
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
     "emotion-theming": "^10.0.10",
-    "fs-extra": "^7.0.1",
     "gatsby": "^2.4.2",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-emotion": "^4.0.6",
@@ -17,13 +16,15 @@
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.36",
     "gatsby-source-filesystem": "^2.0.33",
+    "gatsby-source-pokedex": "^1.0.1",
     "gatsby-transformer-sharp": "^2.1.19",
     "lodash": "^4.17.11",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-feather": "^1.1.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-spring": "^8.0.20"
   },
   "devDependencies": {
     "prettier": "^1.17.0"
