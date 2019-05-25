@@ -6,7 +6,6 @@ import PropTypes from 'prop-types'
 const styles = {
   nav: theme => css`
     background-color: ${theme.navBgColor};
-    margin-bottom: 1.5rem;
   `,
   navContent: css`
     padding: 1.5rem 1rem;

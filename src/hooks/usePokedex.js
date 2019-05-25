@@ -8,12 +8,23 @@ const usePokedex = () => {
           number
           name
           type
+          base {
+            HP
+            Attack
+            Defense
+            Sp__Attack
+            Sp__Defense
+            Speed
+          }
           image {
             childImageSharp {
-              fixed(width: 125, height: 125) {
-                ...GatsbyImageSharpFixed
+              fixed(width: 125, height: 125, quality: 100) {
+                ...GatsbyImageSharpFixed_withWebp
               }
             }
+          }
+          fields {
+            slug
           }
         }
       }

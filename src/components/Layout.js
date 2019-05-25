@@ -58,7 +58,7 @@ const styles = {
     margin: 0 auto;
     width: 100%;
     color: inherit;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
   `,
 }
 
